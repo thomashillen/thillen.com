@@ -1,8 +1,4 @@
 import Link from 'next/link';
-import About from '../pages/about';
-import Projects from '../pages/projects';
-import Contact from '../pages/contact';
-// import Blog from '../pages/blog';
 
 
 const Home = () => {
@@ -15,15 +11,11 @@ const Home = () => {
             I am a recent graduate from NYU with a bachelor's degree in
             Computer Science, currently living in NYC.
           </p>
-          
-          
+
+
         </div>
       </main>
-      <About />
-      <Projects />
-      {/* <Blog /> */}
-      <Contact />
-    
+
     </div>
   );
 };
