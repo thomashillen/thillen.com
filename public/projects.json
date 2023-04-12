@@ -12,5 +12,33 @@
     "description": "This is a description of project 2.",
     "image": "/images/project2.jpg",
     "details": "Project 2 has the following features..."
+  },
+  {
+    "id": 3,
+    "title": "Project 3",
+    "description": "This is a description of project 3.",
+    "image": "/images/project3.jpg",
+    "details": "Project 3 has the following features..."
+  },
+  {
+    "id": 4,
+    "title": "Project 4",
+    "description": "This is a description of project 4.",
+    "image": "/images/project4.jpg",
+    "details": "Project 4 has the following features..."
+  },
+  {
+    "id": 5,
+    "title": "Project 5",
+    "description": "This is a description of project 5.",
+    "image": "/images/project5.jpg",
+    "details": "Project 5 has the following features..."
+  },
+  {
+    "id": 6,
+    "title": "Project 6",
+    "description": "This is a description of project 6.",
+    "image": "/images/project6.jpg",
+    "details": "Project 6 has the following features..."
   }
 ]

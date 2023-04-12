@@ -74,42 +74,42 @@ const Navbar = () => {
       >
         <li>
           <Link href="/" passHref>
-            <span className="text-white cursor-pointer" onClick={closeDropdown}>
+            <button className="text-white cursor-pointer bg-transparent border border-white rounded-md px-3 py-2 hover:bg-white hover:text-gray-800" onClick={closeDropdown}>
               Home
-            </span>
+            </button>
           </Link>
         </li>
         <li>
           <Link href="/about" passHref>
-            <span className="text-white cursor-pointer" onClick={closeDropdown}>
+            <button className="text-white cursor-pointer bg-transparent border border-white rounded-md px-3 py-2 hover:bg-white hover:text-gray-800" onClick={closeDropdown}>
               About
-            </span>
+            </button>
           </Link>
         </li>
         <li>
           <Link href="/projects" passHref>
-            <span className="text-white cursor-pointer" onClick={closeDropdown}>
+            <button className="text-white cursor-pointer bg-transparent border border-white rounded-md px-3 py-2 hover:bg-white hover:text-gray-800" onClick={closeDropdown}>
               Projects
-            </span>
+            </button>
           </Link>
         </li>
         <li>
           <Link href="/contact" passHref>
-            <span className="text-white cursor-pointer" onClick={closeDropdown}>
+            <button className="text-white cursor-pointer bg-transparent border border-white rounded-md px-3 py-2 hover:bg-white hover:text-gray-800" onClick={closeDropdown}>
               Contact
-            </span>
+            </button>
           </Link>
         </li>
         <li>
           <Link href="/blog" passHref>
-            <span className="text-white cursor-pointer" onClick={closeDropdown}>
+            <button className="text-white cursor-pointer bg-transparent border border-white rounded-md px-3 py-2 hover:bg-white hover:text-gray-800" onClick={closeDropdown}>
               Blog
-            </span>
+            </button>
           </Link>
         </li>
         <li className="hidden lg:block">
           <button
-            className="text-white focus:outline-none"
+            className="text-white cursor-pointer bg-transparent border border-white rounded-md px-3 py-2 hover:bg-white hover:text-gray-800 focus:outline-none"
             onClick={toggleTheme}
           >
             <i className={`fas ${theme === 'light' ? 'fa-moon' : 'fa-sun'}`}></i>
