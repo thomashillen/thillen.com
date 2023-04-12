@@ -3,6 +3,7 @@ import { useTheme } from '../contexts/ThemeContext';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+
 const Layout = ({ children }) => {
   const { theme } = useTheme();
 
@@ -14,7 +15,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Navbar />
+      <Navbar className="pt-4" />
       {children}
       <Footer />
     </>
