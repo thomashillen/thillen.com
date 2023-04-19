@@ -12,9 +12,9 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Next.js",
+  name: "thillen.com",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Thomas Hillenmeyer is a software engineer. He lives in NYC.",
   mainNav: [
     {
       title: "Home",

@@ -15,7 +15,7 @@ export default function IndexPage() {
           content="thillen.com website built with Next.js, Radix UI, and Tailwind CSS."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/profile_sketch.jpeg" />
       </Head>
       <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
         <div className="flex max-w-[980px] flex-col items-start gap-2">

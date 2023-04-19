@@ -1,4 +1,5 @@
 import * as React from "react"
+import Image from "next/image"
 import Link from "next/link"
 
 import { NavItem } from "@/types/nav"
@@ -23,13 +24,19 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <Icons.logo className="h-6 w-6" />
+        <Image
+          src="/profile_sketch.jpeg"
+          alt=""
+          className="h-6 w-6 rounded-full"
+          width={40}
+          height={40}
+        />
         <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}
         </span>
       </Link>
       {items?.length ? (
-        <nav className="hidden gap-6 md:flex">
+        <nav className="hidden gap-6 md:flex ">
           {items?.map(
             (item, index) =>
               item.href && (
@@ -53,8 +60,16 @@ export function MainNav({ items }: MainNavProps) {
             variant="ghost"
             className="-ml-4 text-base hover:bg-transparent focus:ring-0 md:hidden"
           >
-            <Icons.logo className="mr-2 h-4 w-4" />{" "}
-            <span className="font-bold">Menu</span>
+            {/* <Icons.logo className="mr-2 h-4 w-4" />{" "} */}
+            <Image
+              src="/profile_sketch.jpeg"
+              alt=""
+              className="mr-2 h-8 w-8 rounded-full"
+              width={40}
+              height={40}
+            />
+
+            <span className="font-bold">MENU</span>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent
@@ -64,7 +79,14 @@ export function MainNav({ items }: MainNavProps) {
         >
           <DropdownMenuLabel>
             <Link href="/" className="flex items-center">
-              <Icons.logo className="mr-2 h-4 w-4" /> {siteConfig.name}
+              <Image
+                src="/profile_sketch.jpeg"
+                alt=""
+                className="mr-2 h-4 w-4 rounded-full"
+                width={40}
+                height={40}
+              />
+              {/* <Icons.logo className="mr-2 h-4 w-4" /> {siteConfig.name} */}
             </Link>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />
