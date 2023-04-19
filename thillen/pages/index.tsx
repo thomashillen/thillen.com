@@ -9,7 +9,7 @@ export default function IndexPage() {
   return (
     <Layout>
       <Head>
-        <title>Next.js</title>
+        <title>thillen.com</title>
         <meta
           name="description"
           content="thillen.com website built with Next.js, Radix UI, and Tailwind CSS."
@@ -20,22 +20,21 @@ export default function IndexPage() {
       <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
         <div className="flex max-w-[980px] flex-col items-start gap-2">
           <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
-            Beautifully designed components <br className="hidden sm:inline" />
-            built with Radix UI and Tailwind CSS.
+            Thomas  <br className="hidden sm:inline" />
+            Hillenmeyer
           </h1>
           <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-            Accessible and customizable components that you can copy and paste
-            into your apps. Free. Open Source. And Next.js 13 Ready.
+            I'm a recent graduate of NYU with a passion for building innovative software solutions. My skills include proficiency in multiple programming languages, experience with agile development methodologies, and a strong ability to work collaboratively in a team environment.
           </p>
         </div>
         <div className="flex gap-4">
           <Link
-            href={siteConfig.links.docs}
+            href={siteConfig.links.resume}
             target="_blank"
             rel="noreferrer"
             className={buttonVariants({ size: "lg" })}
           >
-            Documentation
+            Resume
           </Link>
           <Link
             target="_blank"
