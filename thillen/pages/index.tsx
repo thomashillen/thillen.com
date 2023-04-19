@@ -20,11 +20,15 @@ export default function IndexPage() {
       <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
         <div className="flex max-w-[980px] flex-col items-start gap-2">
           <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
-            Thomas  <br className="hidden sm:inline" />
+            Thomas <br className="hidden sm:inline" />
             Hillenmeyer
           </h1>
           <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-            I am a recent graduate of NYU with a passion for building innovative software solutions. My skills include proficiency in multiple programming languages, experience with agile development methodologies, and a strong ability to work collaboratively in a team environment.
+            I am a recent graduate of NYU with a passion for building innovative
+            software solutions. My skills include proficiency in multiple
+            programming languages, experience with agile development
+            methodologies, and a strong ability to work collaboratively in a
+            team environment.
           </p>
         </div>
         <div className="flex gap-4">
@@ -44,6 +48,18 @@ export default function IndexPage() {
           >
             GitHub
           </Link>
+        </div>
+        <div>
+          <iframe
+            className="br-12 h-99 w-full shadow-lg"
+            src="https://open.spotify.com/embed/playlist/2AzVQANSOEgrk3nHafzEv6?utm_source=generator"
+            width="100%"
+            height="452"
+            // frameBorder="0"
+            // allowFullScreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
     </Layout>
