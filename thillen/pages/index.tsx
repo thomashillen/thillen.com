@@ -24,7 +24,7 @@ export default function IndexPage() {
             Hillenmeyer
           </h1>
           <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-            I'm a recent graduate of NYU with a passion for building innovative software solutions. My skills include proficiency in multiple programming languages, experience with agile development methodologies, and a strong ability to work collaboratively in a team environment.
+            I am a recent graduate of NYU with a passion for building innovative software solutions. My skills include proficiency in multiple programming languages, experience with agile development methodologies, and a strong ability to work collaboratively in a team environment.
           </p>
         </div>
         <div className="flex gap-4">
