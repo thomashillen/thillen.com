@@ -17,9 +17,23 @@ export const siteConfig: SiteConfig = {
     "Thomas Hillenmeyer is a software engineer. He lives in NYC.",
   mainNav: [
     {
-      title: "Home",
+      title: "Home + Spotify",
       href: "/",
     },
+    {
+      title: "Projects",
+      href: "/projects",
+    },
+    {
+      title: "About",
+      href: "/about",
+    },
+
+    {
+      title: "Contact",
+      href: "/contact",
+    },
+
   ],
   links: {
     twitter: "https://twitter.com/thomas_hillen",

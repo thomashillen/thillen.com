@@ -6,6 +6,7 @@ import { NavItem } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -15,6 +16,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { Separator } from "@/components/ui/separator"
 
 interface MainNavProps {
   items?: NavItem[]
@@ -24,13 +26,10 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <Image
-          src="/profile_sketch.jpeg"
-          alt=""
-          className="h-6 w-6 rounded-full"
-          width={40}
-          height={40}
-        />
+        <Avatar >
+          <AvatarImage src="https://avatars.githubusercontent.com/u/47916202?v=4" />
+          <AvatarFallback>TH</AvatarFallback>
+        </Avatar>
         <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}
         </span>
@@ -61,13 +60,12 @@ export function MainNav({ items }: MainNavProps) {
             className="-ml-4 text-base hover:bg-transparent focus:ring-0 md:hidden"
           >
             {/* <Icons.logo className="mr-2 h-4 w-4" />{" "} */}
-            <Image
-              src="/profile_sketch.jpeg"
-              alt=""
-              className="mr-2 h-8 w-8 rounded-full"
-              width={40}
-              height={40}
-            />
+            <Avatar className="mr-2">
+              <AvatarImage
+                src="https://avatars.githubusercontent.com/u/47916202?v=4"
+              />
+              <AvatarFallback>TH</AvatarFallback>
+            </Avatar>
 
             <span className="font-bold">MENU</span>
           </Button>
@@ -79,14 +77,7 @@ export function MainNav({ items }: MainNavProps) {
         >
           <DropdownMenuLabel>
             <Link href="/" className="flex items-center">
-              <Image
-                src="/profile_sketch.jpeg"
-                alt=""
-                className="mr-2 h-4 w-4 rounded-full"
-                width={40}
-                height={40}
-              />
-              {/* <Icons.logo className="mr-2 h-4 w-4" /> {siteConfig.name} */}
+              {siteConfig.name}
             </Link>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />
