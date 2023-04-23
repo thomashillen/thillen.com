@@ -24,11 +24,12 @@ export default function IndexPage() {
             Hillenmeyer
           </h1>
           <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-            I am a recent graduate of NYU with a passion for building innovative
-            software solutions. My skills include proficiency in multiple
-            programming languages, experience with agile development
-            methodologies, and a strong ability to work collaboratively in a
-            team environment.
+            Welcome to my website! I am a software engineer based in NYC and I
+            specialize in building web applications with modern technologies.<br/><br/>
+            Check out my links or stay and listen to my favorite playlist below!
+            {/* <svg className="inline-block w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg> */}
           </p>
         </div>
         <div className="flex gap-4">
@@ -56,7 +57,7 @@ export default function IndexPage() {
             width="100%"
             height="452"
             // frameBorder="0"
-            // allowFullScreen=""
+            // allowFullScreen="true"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
