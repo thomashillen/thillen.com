@@ -26,7 +26,7 @@ export default function IndexPage() {
           <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
             I am a software engineer based in NYC who loves to build things. I
             specialize in building web applications with modern technologies.<br/><br/>
-            Check out my links or stay and listen to my favorite playlist below!<br/>
+            Check out my links or stay and listen to this vibey playlist below!<br/>
             
            
           </p>
