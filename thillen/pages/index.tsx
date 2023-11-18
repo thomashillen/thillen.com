@@ -51,8 +51,9 @@ export default function IndexPage() {
         </div>
         <div>
           <iframe
+            className="rounded-xl "   
             src="https://open.spotify.com/embed/playlist/2AzVQANSOEgrk3nHafzEv6?utm_source=generator"
-            width="100%"
+            // width="100%"
             height="452"
             // frameBorder="0"
             // allowFullScreen="true"
