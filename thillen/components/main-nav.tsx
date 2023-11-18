@@ -25,10 +25,8 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 ">
-      
-
       {items?.length ? (
-        <nav className="hidden gap-6 md:flex ">
+        <nav className="mx-6 hidden gap-6 md:flex">
           {items?.map(
             (item, index) =>
               item.href && (
@@ -36,7 +34,7 @@ export function MainNav({ items }: MainNavProps) {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "flex items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 sm:text-sm",
+                    "flex items-center text-lg font-semibold ",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >
@@ -50,22 +48,16 @@ export function MainNav({ items }: MainNavProps) {
         <DropdownMenuTrigger asChild>
           <Button
             variant="ghost"
-            className="-ml-4 text-base hover:bg-transparent focus:ring-0 md:hidden"
+          
+            className=" text-base hover:bg-transparent focus:ring-0 md:hidden"
           >
             {/* <Icons.logo className="mr-2 h-4 w-4" />{" "} */}
-            <Avatar className="mr-2">
-              <AvatarImage src="https://avatars.githubusercontent.com/u/47916202?v=4" />
-              <AvatarFallback>TH</AvatarFallback>
-            </Avatar>
+           
 
             <span className="font-bold">MENU</span>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent
-          align="start"
-          sideOffset={24}
-          className="background-color:]"
-        >
+        <DropdownMenuContent align="start" sideOffset={24}>
           {items?.map(
             (item, index) =>
               item.href && (

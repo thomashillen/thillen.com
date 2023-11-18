@@ -2,8 +2,10 @@ import Head from "next/head"
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
+import { Icons } from "@/components/icons"
 import { Layout } from "@/components/layout"
 import { buttonVariants } from "@/components/ui/button"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 export default function IndexPage() {
   return (
@@ -23,35 +25,48 @@ export default function IndexPage() {
             Thomas <br className="hidden sm:inline" />
             Hillenmeyer
           </h1>
-          <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
+          <p className="my-5 max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
             I am a software engineer based in NYC who loves to build things. I
-            specialize in building web applications with modern technologies.<br/><br/>
-            Check out my links or stay and listen to this vibey playlist below!<br/>
-            
-           
+            specialize in building web applications with modern technologies.
           </p>
+
+          <div id="links" className="flex items-center rounded-md border">
+            <Link
+              href={siteConfig.links.resume}
+              target="_blank"
+              rel="noreferrer"
+              className={buttonVariants({ size: "sm", variant: "ghost" })}
+            >
+              read.cv
+            </Link>
+            <Link
+              href={siteConfig.links.github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                <Icons.github className="h-5 w-5" />
+                <span className="sr-only">GitHub</span>
+              </div>
+            </Link>
+            <Link
+              href={siteConfig.links.twitter}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                <Icons.twitter className="h-5 w-5 " />
+                <span className="sr-only">Twitter</span>
+              </div>
+            </Link>
+          </div>
         </div>
-        <div className="flex gap-4">
-          <Link
-            href={siteConfig.links.resume}
-            target="_blank"
-            rel="noreferrer"
-            className={buttonVariants({ size: "lg" })}
-          >
-            read.cv
-          </Link>
-          <Link
-            target="_blank"
-            rel="noreferrer"
-            href={siteConfig.links.github}
-            className={buttonVariants({ variant: "outline", size: "lg" })}
-          >
-            GitHub
-          </Link>
-        </div>
-        <div>
+        <div className="w-full max-w-sm">
+          <h1 className="text2xl font-extrabold leading-tight tracking-tighter sm:text-xl md:text-2xl lg:text-3xl">
+         Some good music:
+          </h1>
           <iframe
-            className="rounded-xl "   
+            className="w-full rounded-xl my-2"
             src="https://open.spotify.com/embed/playlist/2AzVQANSOEgrk3nHafzEv6?utm_source=generator"
             // width="100%"
             height="452"
