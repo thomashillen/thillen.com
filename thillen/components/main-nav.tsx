@@ -24,16 +24,9 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="flex gap-6 md:gap-10">
-      <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <Avatar >
-          <AvatarImage src="https://avatars.githubusercontent.com/u/47916202?v=4" />
-          <AvatarFallback>TH</AvatarFallback>
-        </Avatar>
-        <span className="hidden font-bold sm:inline-block">
-          {/* {siteConfig.name} */}
-        </span>
-      </Link>
+    <div className="flex gap-6 ">
+      
+
       {items?.length ? (
         <nav className="hidden gap-6 md:flex ">
           {items?.map(
@@ -61,9 +54,7 @@ export function MainNav({ items }: MainNavProps) {
           >
             {/* <Icons.logo className="mr-2 h-4 w-4" />{" "} */}
             <Avatar className="mr-2">
-              <AvatarImage
-                src="https://avatars.githubusercontent.com/u/47916202?v=4"
-              />
+              <AvatarImage src="https://avatars.githubusercontent.com/u/47916202?v=4" />
               <AvatarFallback>TH</AvatarFallback>
             </Avatar>
 
@@ -73,15 +64,8 @@ export function MainNav({ items }: MainNavProps) {
         <DropdownMenuContent
           align="start"
           sideOffset={24}
-          className="w-[300px] overflow-scroll"
+          className="background-color:]"
         >
-          <DropdownMenuLabel>
-            <Link href="/" className="flex items-center">
-              {/* {siteConfig.name} */}
-              DIRECECTORY:
-            </Link>
-          </DropdownMenuLabel>
-          <DropdownMenuSeparator />
           {items?.map(
             (item, index) =>
               item.href && (

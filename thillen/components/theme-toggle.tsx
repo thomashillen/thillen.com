@@ -11,7 +11,7 @@ export function ThemeToggle() {
 
   return (
     <Button
-      variant="ghost"
+      variant="default"
       size="sm"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
