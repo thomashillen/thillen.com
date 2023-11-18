@@ -1,78 +1,68 @@
-# next-template
+# Thomas Hillenmeyer's Portfolio
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+This repository contains the source code for Thomas Hillenmeyer's personal portfolio website. The site is built with Next.js 14, featuring a modern design and showcasing my software engineering projects and skills.
 
 ## Features
 
-- Radix UI Primitives
-- Tailwind CSS
-- Fonts with `@next/font`
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Automatic import sorting with `@ianvs/prettier-plugin-sort-imports`
+- **Next.js 14**: Utilizing the latest features of Next.js for fast, server-rendered React applications.
+- **Tailwind CSS**: Styling with Tailwind CSS for responsive and elegant design.
+- **Interactive Project Cards**: Dynamic project cards with information about each project.
+- **Responsive Layout**: Fully responsive design that works on mobile, tablet, and desktop.
 
-## Tailwind CSS Features
+## Getting Started
 
-- Class merging with `taiwind-merge`
-- Animation with `tailwindcss-animate`
-- Conditional classes with `clsx`
-- Variants with `class-variance-authority`
-- Automatic class sorting with `eslint-plugin-tailwindcss`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Import Sort
+### Prerequisites
 
-The starter comes with `@ianvs/prettier-plugin-sort-imports` for automatically sort your imports.
+- Node.js (LTS version)
+- npm or yarn
 
-### Input
+### Installation
 
-```tsx
-import * as React from "react"
-import Link from "next/link"
+1. Clone the repository:
 
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
-import "@/styles/globals.css"
-import { twMerge } from "tailwind-merge"
-
-import { NavItem } from "@/types/nav"
-import { cn } from "@/lib/utils"
+```bash
+  git clone https://github.com/yourusername/portfolio-nextjs.git
+  cd portfolio-nextjs
 ```
 
-### Output
-
-```tsx
-import * as React from "react"
-// React is always first.
-import Link from "next/link"
-// Followed by next modules.
-import { twMerge } from "tailwind-merge"
-
-// Followed by third-party modules
-// Space
-import "@/styles/globals.css"
-// styles
-import { NavItem } from "@/types/nav"
-// types
-import { siteConfig } from "@/config/site"
-// config
-import { cn } from "@/lib/utils"
-// lib
-import { buttonVariants } from "@/components/ui/button"
-
-// components
+Install the dependencies:
+```bash
+npm install
+```
+or if you are using yarn:
+```bash
+yarn install
 ```
 
-### Class Merging
+Start the development server:
 
-The `cn` util handles conditional classes and class merging.
+```bash
+npm run dev
+```
+or with yarn:
 
-### Input
+```bash
 
-```ts
-cn("px-2 bg-slate-100 py-2 bg-slate-200")
-// Outputs `p-2 bg-slate-200`
+yarn dev
+```
+Open http://localhost:3000 with your browser to see the result.
+
+## Deployment
+Instructions on how to deploy the portfolio to a live environment.
+
+### Building for Production
+To create a production build, use:
+
+```bash
+npm run build
+```
+or with yarn:
+```bash
+yarn build
 ```
 
-## License
+### Deploying
+You can deploy the portfolio using Vercel, Netlify, or any other platform that supports Node.js applications.
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
