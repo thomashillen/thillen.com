@@ -4,6 +4,7 @@ import {
   Moon,
   SunMedium,
   Twitter,
+  Github,
   // type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -22,7 +23,8 @@ export const Icons = {
       />
     </svg>
   ),
-  gitHub: (props: LucideProps) => (
+  github: Github,
+  githubs: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
         fill="currentColor"

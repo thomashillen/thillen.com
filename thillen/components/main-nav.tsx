@@ -31,7 +31,7 @@ export function MainNav({ items }: MainNavProps) {
           <AvatarFallback>TH</AvatarFallback>
         </Avatar>
         <span className="hidden font-bold sm:inline-block">
-          {siteConfig.name}
+          {/* {siteConfig.name} */}
         </span>
       </Link>
       {items?.length ? (
@@ -77,7 +77,8 @@ export function MainNav({ items }: MainNavProps) {
         >
           <DropdownMenuLabel>
             <Link href="/" className="flex items-center">
-              {siteConfig.name}
+              {/* {siteConfig.name} */}
+              DIRECECTORY:
             </Link>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />

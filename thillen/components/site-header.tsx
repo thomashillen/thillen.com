@@ -22,10 +22,10 @@ export function SiteHeader() {
                 className={buttonVariants({
                   size: "sm",
                   variant: "ghost",
-                  className: "text-slate-700 dark:text-slate-400",
+                  // className: "text-slate-700 dark:text-slate-400 ",
                 })}
               >
-                <Icons.gitHub className="h-5 w-5" />
+                <Icons.github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
@@ -38,10 +38,10 @@ export function SiteHeader() {
                 className={buttonVariants({
                   size: "sm",
                   variant: "ghost",
-                  className: "text-slate-700 dark:text-slate-400",
+                  // className: "text-slate-700 dark:text-slate-400",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 fill-current" />
+                <Icons.twitter className="h-5 w-5 " />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
