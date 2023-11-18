@@ -24,14 +24,14 @@ export const siteConfig: SiteConfig = {
       title: "Projects",
       href: "/projects",
     },
-    {
-      title: "About",
-      href: "/about",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-    },
+    // {
+    //   title: "About",
+    //   href: "/about",
+    // },
+    // {
+    //   title: "Contact",
+    //   href: "/contact",
+    // },
 
   ],
   links: {

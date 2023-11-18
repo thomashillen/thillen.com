@@ -5,6 +5,7 @@ import {
   SunMedium,
   Twitter,
   Github,
+  ExternalLink,
   // type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -15,6 +16,7 @@ export const Icons = {
   moon: Moon,
   laptop: Laptop,
   twitter: Twitter,
+  link: ExternalLink,
   logo: (props: LucideProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
