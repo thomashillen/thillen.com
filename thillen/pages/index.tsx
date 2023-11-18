@@ -63,7 +63,7 @@ export default function IndexPage() {
         </div>
         <div className="w-full max-w-sm">
           <h1 className="text2xl font-extrabold leading-tight tracking-tighter sm:text-xl md:text-2xl lg:text-3xl">
-         Some good music:
+            Some good music:
           </h1>
           <iframe
             className="w-full rounded-xl my-2"
