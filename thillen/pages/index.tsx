@@ -42,7 +42,7 @@ export default function IndexPage() {
                 <div className="ml-1">read.cv</div>
               </div>
             </Link>
-            <div className="border-l border-gray-300 py-2"></div>
+            <div className="border-l py-2"></div>
             <Link
               href={siteConfig.links.github}
               target="_blank"
@@ -54,7 +54,7 @@ export default function IndexPage() {
                 <div className="ml-1">Github</div>
               </div>
             </Link>
-            <div className="border-l border-gray-300 py-2"></div>
+            <div className="border-l py-2"></div>
             <Link
               href={siteConfig.links.twitter}
               target="_blank"
