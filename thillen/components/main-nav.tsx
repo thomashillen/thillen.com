@@ -24,9 +24,9 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="flex gap-6 ">
+    <div className="flex gap-6">
       {items?.length ? (
-        <nav className="mx-6 hidden gap-6 md:flex">
+        <nav className="mx-6 hidden gap-6 md:flex ">
           {items?.map(
             (item, index) =>
               item.href && (

@@ -1,13 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+import Head from "next/head"
+import Image from "next/image"
+import Link from "next/link"
 
-
-
-import { Icons } from "@/components/icons";
-import { Layout } from "@/components/layout";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-
+import { Icons } from "@/components/icons"
+import { Layout } from "@/components/layout"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 export default function ProjectsPage() {
   const projects = [
@@ -55,30 +52,33 @@ export default function ProjectsPage() {
             >
               <div className="block h-full">
                 <Card className="hover:bg-secondary h-full transition-colors">
-                  <CardHeader>
+                  <CardHeader className="text-xl font-bold">
                     <div className="flex items-center justify-between">
                       <h2>{project.title}</h2>
                       <Icons.link className="h-5 w-5" />
                     </div>
                   </CardHeader>
-                  <div className="p-4">
-                    {/* <img
-                      src={project.imageUrl}
-                      alt={project.title}
-                      className="mb-4 w-full object-cover"
-                    />{" "} */}
-                    {/* Image */}
-                    <Image
-                      src={project.imageUrl}
-                      alt={project.title}
-                      width={500} // replace with your image's width
-                      height={300} // replace with your image's height
-                      className="mb-4 object-cover"
-                    />
-                    <CardContent>
-                      <p>{project.description}</p>
-                    </CardContent>
-                  </div>
+
+                  <CardContent>
+                    <div className="relative flex justify-center">
+                      <Image
+                        src={project.imageUrl}
+                        alt={project.title}
+                        height={200}
+                        width={300}
+                        objectFit="cover"
+                        className="mb-4 rounded border "
+                      />
+                    </div>
+                    <div className="mb-4 flex ">
+                      <Icons.laptop className="h-5 w-5" />
+                      <span className="ml-2 text-xs text-slate-700 dark:text-slate-400">
+                        {project.link}
+                      </span>
+                    </div>
+
+                    <p>{project.description}</p>
+                  </CardContent>
                 </Card>
               </div>
             </Link>

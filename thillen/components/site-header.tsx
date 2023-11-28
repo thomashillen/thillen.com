@@ -9,7 +9,7 @@ import { buttonVariants } from "@/components/ui/button"
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b ">
+    <header className="sticky top-0 z-40 w-full border-b bg-background opacity-90 backdrop:blur:md">
       <div className="container flex h-16 items-center sm:justify-between ">
         <div>
           <Avatar>

@@ -21,16 +21,12 @@ export default function IndexPage() {
       </Head>
       <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
         <div className="flex max-w-[980px] flex-col items-start gap-2">
-          <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
+          <h1 className=" text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
             Thomas <br className="hidden sm:inline" />
             Hillenmeyer
           </h1>
-          <p className="my-5 max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-            I am a software engineer based in NYC who loves to build things. I
-            specialize in building web applications with modern technologies.
-          </p>
 
-          <div id="links" className="flex items-center rounded-md border">
+          <div id="links" className="my-6 flex items-center rounded-md border">
             <Link
               href={siteConfig.links.resume}
               target="_blank"
@@ -67,6 +63,11 @@ export default function IndexPage() {
               </div>
             </Link>
           </div>
+
+          <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
+            I am a software engineer based in NYC who loves to build things. I
+            specialize in building web applications with modern technologies.
+          </p>
         </div>
         <div className="w-full max-w-sm">
           <h1 className="text2xl font-extrabold leading-tight tracking-tighter sm:text-xl md:text-2xl lg:text-3xl">
