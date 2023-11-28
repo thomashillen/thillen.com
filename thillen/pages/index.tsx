@@ -35,10 +35,14 @@ export default function IndexPage() {
               href={siteConfig.links.resume}
               target="_blank"
               rel="noreferrer"
-              className={buttonVariants({ size: "sm", variant: "ghost" })}
             >
-              read.cv
+              <div className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                <Icons.readcv className="h-5 w-5 " />
+                <span className="sr-only">read.cv</span>
+                <div className="ml-1">read.cv</div>
+              </div>
             </Link>
+            <div className="border-l border-gray-300 py-2"></div>
             <Link
               href={siteConfig.links.github}
               target="_blank"
@@ -47,8 +51,10 @@ export default function IndexPage() {
               <div className={buttonVariants({ size: "sm", variant: "ghost" })}>
                 <Icons.github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
+                <div className="ml-1">Github</div>
               </div>
             </Link>
+            <div className="border-l border-gray-300 py-2"></div>
             <Link
               href={siteConfig.links.twitter}
               target="_blank"
@@ -57,6 +63,7 @@ export default function IndexPage() {
               <div className={buttonVariants({ size: "sm", variant: "ghost" })}>
                 <Icons.twitter className="h-5 w-5 " />
                 <span className="sr-only">Twitter</span>
+                <div className="ml-1">Twitter</div>
               </div>
             </Link>
           </div>
@@ -66,7 +73,7 @@ export default function IndexPage() {
             Some good music:
           </h1>
           <iframe
-            className="w-full rounded-xl my-2"
+            className="my-2 w-full rounded-xl"
             src="https://open.spotify.com/embed/playlist/2AzVQANSOEgrk3nHafzEv6?utm_source=generator"
             // width="100%"
             height="452"
