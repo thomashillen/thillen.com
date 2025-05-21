@@ -2,34 +2,12 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 
+import { projects, Project } from "@/config/projects" // Adjusted import path
 import { Icons } from "@/components/icons"
 import { Layout } from "@/components/layout"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 export default function ProjectsPage() {
-  const projects = [
-    {
-      title: "Burger Builder",
-      description: "A fun and interactive way to build your perfect burger.",
-      link: "https://my-perfect-burger.vercel.app/",
-      imageUrl: "/BurgerBuilderScreenshot.png",
-    },
-    {
-      title: "nannü website",
-      description: "A website for a fashion brand.",
-      link: "https://nannu.us/",
-      imageUrl: "/nannuScreenshot.png",
-    },
-    {
-      title: "My Portfolio",
-      description: "This website!",
-      link: "https://thillen.com",
-      imageUrl: "/thillenScreenshot.png",
-    },
-
-    // ... more projects
-  ]
-
   return (
     <Layout>
       <Head>
@@ -43,7 +21,7 @@ export default function ProjectsPage() {
           check back soon!
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
+          {projects.map((project: Project, index) => ( // Added Project type
             <Link
               key={index}
               href={project.link}
