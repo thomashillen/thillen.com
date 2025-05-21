@@ -1,6 +1,8 @@
 import Head from "next/head"
+import Image from "next/image" // Added Image import
 import Link from "next/link"
 
+import { Project, projects } from "@/config/projects" // Added Project and projects import
 import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
 import { Layout } from "@/components/layout"
@@ -8,6 +10,7 @@ import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 export default function IndexPage() {
+  const featuredProjects = projects.slice(0, 3)
   return (
     <Layout>
       <Head>
@@ -69,6 +72,64 @@ export default function IndexPage() {
             specialize in building web applications with modern technologies.
           </p>
         </div>
+
+        {/* Featured Projects Section */}
+        <section className="mt-8">
+          <h2 className="my-8 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">
+            Featured Projects
+          </h2>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {featuredProjects.map((project: Project, index) => (
+              <Link
+                key={index}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <Card className="hover:bg-secondary h-full transition-colors">
+                  <CardHeader className="text-xl font-bold">
+                    <div className="flex items-center justify-between">
+                      <h2>{project.title}</h2>
+                      <Icons.link className="h-5 w-5" />
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="relative flex justify-center">
+                      <Image
+                        src={project.imageUrl}
+                        alt={project.title}
+                        width={300}
+                        height={200}
+                        objectFit="cover"
+                        className="mb-4 rounded border"
+                      />
+                    </div>
+                    <div className="mb-4 flex items-center">
+                      <Icons.laptop className="h-5 w-5" />
+                      <span className="ml-2 truncate text-xs text-slate-700 dark:text-slate-400">
+                        {project.link}
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-700 dark:text-slate-400">
+                      {project.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/projects"
+            className={
+              buttonVariants({ variant: "outline", size: "lg" }) +
+              " mx-auto mt-8 block w-fit"
+            }
+          >
+            View all projects
+          </Link>
+        </section>
+
         <div className="w-full max-w-sm">
           <h1 className="text2xl font-extrabold leading-tight tracking-tighter sm:text-xl md:text-2xl lg:text-3xl">
             Some good music:
