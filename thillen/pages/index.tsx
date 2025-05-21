@@ -72,12 +72,16 @@ export default function IndexPage() {
             I am a software engineer based in NYC who loves to build things. I
             specialize in building web applications with modern technologies.
           </p>
+        </div>
+
+        {/* InteractiveGridAnimation Wrapper */}
+        <div className="max-w-[980px] mx-auto my-12 border border-slate-200 dark:border-slate-700 rounded-md p-4"> {/* Changed my-8 to my-12 */}
           <InteractiveGridAnimation />
         </div>
 
         {/* Featured Projects Section */}
-        <section className="mt-8">
-          <h2 className="my-8 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">
+        <section className="max-w-[980px] mx-auto my-12"> {/* Applied max-width, centering, and vertical margin */}
+          <h2 className="my-8 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl"> {/* Heading will be contained by parent */}
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -132,17 +136,19 @@ export default function IndexPage() {
           </Link>
         </section>
 
-        <div className="w-full max-w-sm">
-          <h1 className="text2xl font-extrabold leading-tight tracking-tighter sm:text-xl md:text-2xl lg:text-3xl">
-            Some good music:
-          </h1>
-          <iframe
-            className="my-2 w-full rounded-xl"
-            src="https://open.spotify.com/embed/playlist/2AzVQANSOEgrk3nHafzEv6?utm_source=generator"
-            // width="100%"
-            height="452"
-            // frameBorder="0"
-            // allowFullScreen="true"
+        {/* Spotify Embed Section */}
+        <div className="max-w-[980px] mx-auto my-12"> {/* Outer wrapper for section alignment */}
+          <div className="mx-auto max-w-md"> {/* Inner wrapper to keep Spotify embed reasonably sized & centered */}
+            <h1 className="text2xl font-extrabold leading-tight tracking-tighter sm:text-xl md:text-2xl lg:text-3xl mb-4 text-center"> {/* Added mb-4 and text-center */}
+              Some good music:
+            </h1>
+            <iframe
+              className="my-2 w-full rounded-xl aspect-video" // Added aspect-video
+              src="https://open.spotify.com/embed/playlist/2AzVQANSOEgrk3nHafzEv6?utm_source=generator"
+              // width="100%" removed as w-full and aspect-video handle it
+              // height="452" removed
+              // frameBorder="0" (can be kept or removed, typically fine)
+              // allowFullScreen="true" (can be kept)
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
