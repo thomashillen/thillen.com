@@ -23,8 +23,10 @@ export default function IndexPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/profile_sketch.jpeg" />
       </Head>
-      <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-        <div className="flex max-w-[980px] flex-col items-start gap-2">
+      {/* Updated classes for consistent width and centering */}
+      <section className="max-w-[980px] mx-auto pt-6 pb-8 md:py-10">
+        {/* Removed max-w-[980px] as parent section now handles it */}
+        <div className="flex flex-col items-start gap-2">
           <h1 className=" text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
             Thomas <br className="hidden sm:inline" />
             Hillenmeyer
@@ -138,15 +140,15 @@ export default function IndexPage() {
 
         {/* Spotify Embed Section */}
         <div className="max-w-[980px] mx-auto my-12"> {/* Outer wrapper for section alignment */}
-          <div className="mx-auto max-w-md"> {/* Inner wrapper to keep Spotify embed reasonably sized & centered */}
+          <div className="mx-auto max-w-lg"> {/* Changed max-w-md to max-w-lg */}
             <h1 className="text2xl font-extrabold leading-tight tracking-tighter sm:text-xl md:text-2xl lg:text-3xl mb-4 text-center"> {/* Added mb-4 and text-center */}
               Some good music:
             </h1>
             <iframe
-              className="my-2 w-full rounded-xl aspect-video" // Added aspect-video
+              className="my-2 w-full rounded-xl h-[380px]" // Removed aspect-video, added h-[380px]
               src="https://open.spotify.com/embed/playlist/2AzVQANSOEgrk3nHafzEv6?utm_source=generator"
-              // width="100%" removed as w-full and aspect-video handle it
-              // height="452" removed
+              // width="100%" removed as w-full handles it
+              // height attribute removed, using Tailwind class now
               // frameBorder="0" (can be kept or removed, typically fine)
               // allowFullScreen="true" (can be kept)
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
