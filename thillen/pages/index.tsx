@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Project, projects } from "@/config/projects" // Added Project and projects import
 import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
+import { InteractiveGridAnimation } from "@/components/interactive-grid" // Added InteractiveGridAnimation import
 import { Layout } from "@/components/layout"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -71,6 +72,7 @@ export default function IndexPage() {
             I am a software engineer based in NYC who loves to build things. I
             specialize in building web applications with modern technologies.
           </p>
+          <InteractiveGridAnimation />
         </div>
 
         {/* Featured Projects Section */}
