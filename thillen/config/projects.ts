@@ -15,7 +15,7 @@ export const projects: Project[] = [
   {
     title: "nannü website",
     description: "A website for a fashion brand.",
-    link: "https://nannu.us/",
+    link: "https://nannu-website.vercel.app/",
     imageUrl: "/nannuScreenshot.png",
   },
   {
