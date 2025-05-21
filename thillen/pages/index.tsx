@@ -152,7 +152,8 @@ export default function IndexPage() {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
-        </div>
+          </div> {/* Closes "mx-auto max-w-md" */}
+        </div>   {/* ADDED MISSING CLOSING TAG HERE for "max-w-[980px] mx-auto my-12" */}
       </section>
     </Layout>
   )
