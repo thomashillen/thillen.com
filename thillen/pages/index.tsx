@@ -34,14 +34,14 @@ export default function IndexPage() {
 
           <div id="links" className="my-6 flex items-center rounded-md border">
             <Link
-              href={siteConfig.links.resume}
+              href={siteConfig.links.linkedin}
               target="_blank"
               rel="noreferrer"
             >
               <div className={buttonVariants({ size: "sm", variant: "ghost" })}>
-                <Icons.readcv className="h-5 w-5 " />
-                <span className="sr-only">read.cv</span>
-                <div className="ml-1">read.cv</div>
+                <Icons.linkedin className="h-5 w-5 " />
+                <span className="sr-only">LinkedIn</span>
+                <div className="ml-1">LinkedIn</div>
               </div>
             </Link>
             <div className="border-l py-2"></div>
